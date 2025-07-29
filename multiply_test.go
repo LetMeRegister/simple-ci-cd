@@ -9,4 +9,7 @@ func TestMultiply(t *testing.T ){
 			t.FailNow()
 		}
 	})
+	t.Run("fail", func (t *testing.T)  {
+		t.FailNow()
+	})
 }
