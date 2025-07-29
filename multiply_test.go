@@ -1,6 +1,12 @@
 package add_test
 
+import "testing"
+import "add"
 
 func TestMultiply(t *testing.T ){
-	t.FailNow()
+	t.Run("zero by zero", func (t *testing.T )  {
+		if(0 != add.Multiply(0 , 0 )){
+			t.FailNow()
+		}
+	})
 }
